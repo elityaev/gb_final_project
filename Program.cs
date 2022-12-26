@@ -10,4 +10,14 @@
     return arr;
 }
 
+int GetLengthNewArray(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3) count += 1;
+    }
+    return count;
+}
+
 
